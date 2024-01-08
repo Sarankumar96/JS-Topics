@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX</title>
+</head>
+<body>  
+    <!-- Method 1
+ <button id="btn"> Get Data</button>
+    <script>
+        let abc = document.getElementById("btn");
+        abc.addEventListener('click',runAjax);
+        function runAjax(){
+            let xhr = new XMLHttpRequest();
+            xhr.open('GET','myfile.txt','true');
+            xhr.onreadystatechange = function(){
+                if(this.readyState==4 && this.status==200){
+                    document.write(this.responseText);
+                }
+            }
+            xhr.send();
+        }
+ </script>   -->
+    <!-- <button id="btn">Get Data</button>
+    <script>
+        let btn1 = document.getElementById("btn");
+        btn1.addEventListener('click',ajax);
+        function ajax(){
+            let req = new XMLHttpRequest();
+            req.open('GET','load.html',true);
+            req.onreadystatechange = function(){
+                if(this.readyState == 4 && this.status == 200){
+                    document.write(this.responseText);
+                }
+            }
+            req.send();
+        }
+    </script> -->
+
+
+    <!-- <button id = "btn"> Get Data</button>
+    <script>
+        let btn = document.getElementById("btn");
+        btn.addEventListener('click',runAjax);
+        function runAjax(){
+            let req = new XMLHttpRequest();
+            req.open('GET','load.html',true);
+            req.onreadystatechange = function(){
+                if(this.readyState == 4 && this.status ==200){
+                    document.write(this.responseText);
+                }
+            }
+
+            req.send();
+        }
+    </script> -->
+
+    <!-- <button id="btn">Get Data</button>
+    <script>
+        let btn = document.getElementById("btn");
+        btn.addEventListener('click',runAjax);
+        function runAjax(){
+            let req = new XMLHttpRequest();
+            req.open('GET','myfile.txt',true);
+            req.onreadystatechange = function(){
+                if(this.readyState==4 && this.status==200){
+                    document.write(this.responseText);
+                }
+            }
+            req.send();
+        } 
+    </script>-->
+
+        <button id="btn">Get Data</button>
+        <script>
+            let btn = document.getElementById("btn");
+            btn.addEventListener('click',runAjax);
+            function runAjax(){
+                let req = new XMLHttpRequest();
+                req.open('GET','myfile.txt',true);
+                req.onreadystatechange = function (){
+                    if(this.readyState==4 && this.status==200){
+                        document.write(this.responseText);
+                    }
+                }
+                req.send();
+            }
+        </script>
+
+    
+
+
+<!-- Method 2-->  
+    <!-- <button id = "load" onclick="myfun()">Click Me</button>
+    <script>
+        function myfun(){
+            var req = new XMLHttpRequest();//creating XMLHTTP request object, here variable req is an object
+            req.open('GET','load.html',true);//info about speed i.e GET or POST, where to fetch the data and how to display it i.e asynchronously/synchronously
+            req.send();//sending the request
+             
+            req.onreadystatechange = function (){ // defining a null function
+                if(req.readyState == 4 && req.status == 200){
+                    document.getElementById("load").innerHTML= req.responseText
+
+                }
+            }
+
+        }
+
+    </script>  -->
+
+    
+</body>
+</html>
